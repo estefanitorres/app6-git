@@ -1,0 +1,352 @@
+﻿<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+   <title>sexta aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema6.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+
+  <script type="text/javascript">
+  
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/MINI-White.jpg','imagenes/images.jpg','imagenes/celular6.jpg','imagenes/celular7.png','imagenes/conflicto-batalla.png','imagenes/monumentos.jpg','imagenes/5 DE MAYO.jpg')">
+
+   <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+     <h1>BATALLA DE PUEBLA</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagenes sobre el 4 de Mayo</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	     <center><img src="imagenes/4 de mayo.jpg" width="30%" height="30%" alt="unefon"><img src="imagenes/batalla_4 de mayo.jpg" width="30%" height="30%" alt="unefon"></center> </div>
+	   </div>
+	   </div>
+	   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>Imagenes sobre el 5 de Mayo</h1>
+       <div>
+       <br>
+       </div>
+        <div>
+          <center><img src="imagenes/CINCO DE MAYO.jpg" width="30%" height="30%" alt="unefon"><img src="imagenes/batalla-5-de-mayo.jpg" width="30%" height="30%" alt="unefon"></center> </div>
+       </div>
+      </div>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagenes de los heroes de la batalla</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	     <center><img src="imagenes/haroes-de-batalla.jpg" width="30%" height="30%" alt="unefon"><img src="imagenes/puebla.jpg" width="30%" height="30%" alt="unefon"></center> </div>
+	   </div>
+	   </div>
+     <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Batalla 4 de Mayo</h2>
+          </a>
+       </li>   
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Batalla 5 de Mayo</h2>
+          </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Inicio del Conflicto</h2>
+           </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Monumentos de la Batalla </h2>
+           </a>
+        </li>
+<li class="ui-fir ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Heroes de la Batalla </h2>
+           </a>
+        </li>
+<li class="ui-fir ui-last-child">
+           <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Consultar mas informacion sobre los temas anteriores </h2>
+           </a>
+        </li>
+       </ul>
+<br>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/5_de_mayo_batalla_de_puebla.jpg" alt="5 DE MAYO BATALLA DE PUEBLA" title="5 DE MAYO BATALLA DE PUEBLA" id="wows1_0"/></li>
+		<li><img src="data1/images/5_de_mayo_batalla.jpg" alt="5 DE MAYO BATALLA" title="5 DE MAYO BATALLA" id="wows1_1"/></li>
+		<li><img src="data1/images/5_de_mayo.jpg" alt="5 DE MAYO" title="5 DE MAYO" id="wows1_2"/></li>
+		<li><img src="data1/images/batalla_5_de_mayo_puebla.jpg" alt="BATALLA 5 DE MAYO PUEBLA" title="BATALLA 5 DE MAYO PUEBLA" id="wows1_3"/></li>
+		<li><img src="data1/images/batalla_5_de_mayo.jpg" alt="BATALLA 5 DE MAYO" title="BATALLA 5 DE MAYO" id="wows1_4"/></li>
+		<li><img src="data1/images/batalla_de_puebla.jpg" alt="BATALLA DE PUEBLA" title="BATALLA DE PUEBLA" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/batalla_puebla.jpg" alt="wow slider" title="BATALLA PUEBLA" id="wows1_6"/></a></li>
+		<li><img src="data1/images/cinco_de_mayo.jpg" alt="CINCO DE MAYO" title="CINCO DE MAYO" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="5 DE MAYO BATALLA DE PUEBLA"><span><img src="data1/tooltips/5_de_mayo_batalla_de_puebla.jpg" alt="5 DE MAYO BATALLA DE PUEBLA"/>1</span></a>
+		<a href="#" title="5 DE MAYO BATALLA"><span><img src="data1/tooltips/5_de_mayo_batalla.jpg" alt="5 DE MAYO BATALLA"/>2</span></a>
+		<a href="#" title="5 DE MAYO"><span><img src="data1/tooltips/5_de_mayo.jpg" alt="5 DE MAYO"/>3</span></a>
+		<a href="#" title="BATALLA 5 DE MAYO PUEBLA"><span><img src="data1/tooltips/batalla_5_de_mayo_puebla.jpg" alt="BATALLA 5 DE MAYO PUEBLA"/>4</span></a>
+		<a href="#" title="BATALLA 5 DE MAYO"><span><img src="data1/tooltips/batalla_5_de_mayo.jpg" alt="BATALLA 5 DE MAYO"/>5</span></a>
+		<a href="#" title="BATALLA DE PUEBLA"><span><img src="data1/tooltips/batalla_de_puebla.jpg" alt="BATALLA DE PUEBLA"/>6</span></a>
+		<a href="#" title="BATALLA PUEBLA"><span><img src="data1/tooltips/batalla_puebla.jpg" alt="BATALLA PUEBLA"/>7</span></a>
+		<a href="#" title="CINCO DE MAYO"><span><img src="data1/tooltips/cinco_de_mayo.jpg" alt="CINCO DE MAYO"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<br>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+         <img src="imagenes/logo.png" width="76" height="69" alt="icono"> </div>
+        <div>
+          <h4>Aplicacion Seis</h4>
+          <h4>ESTEFANI TORRES BAUTISTA</h4>
+        </div>
+</div>
+        </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>4 de Mayo</h1>
+           </div>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/5 DE MAYO BATALLA.jpg',1)"><img src="imagenes/5 DE MAYO BATALLA DE PUEBLA.jpg" width="561" height="375" id="Image26"></a></center>
+           <div data-role="content" align="center">
+             <div>
+               <h2>La historia de la Batalla del 4 de mayo de 1862 relata que, durante la segunda intervención francesa en México, en la hacienda de La Trapera, los atlixquenses y elementos del ejército mexicano de la república, al mando de los General Antonio Carvajal y Tomas O´Horan se enfrentaron a las tropas al servicio del Segundo Imperio Mexicano comandadas por el Gral. José María Cobos y de Leonardo Márquez.
+
+Y que, gracias a este triunfo, el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar al día siguiente a las tropas francesas del Conde de Lorencez en la batalla de Puebla.
+
+Al llegar a zócalo del municipio, el alcalde y autoridades municipales tomaron su lugar en Palacio Municipal para después recibir con aplausos a los contingentes de estudiantes atlixquenses, entre ellos, la participación de 23 banderas con escolta, 38 elemento del personal militar, 20 unidades móviles, 9 mil 958 directivos, docentes, administrativos y alumnos de 46 plantes educativos, 22 bandas de guerra y/o música, 40 binomios de charros, así como 446 personal de instituciones municipales.
+<br>
+<br>
+<center><img src="imagenes/BATALLA_ATLIXCO.png" width="30%" height="30%" alt="unefon"></center>
+<br>
+La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.1
+
+Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</h2>
+             </div>
+             <center><img src="imagenes/4_de_mayo.jpg" width="30%" height="30%" alt="unefon"></center>
+           </div>
+           <div data-role="footer" data-theme="a" data-position="fixed">
+             <h4>Aplicacion Seis, ETB</h4>
+           </div>
+</div>
+         
+         
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>5 de Mayo</h1>
+        </div>
+<br>
+<br>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('batalla','','imagenes/BATALLA 5 DE MAYO PUEBLA.jpg',1)"><img src="imagenes/CINCO DE MAYO.jpg" width="240" height="175" id="batalla"></a></center>
+        <div data-role="content" align="center">
+          <div>
+            <h2> Este 5 de Mayo se conmemora el CLII aniversario de la Batalla de Puebla que tuvo lugar en el año de 1862 cuando México era presidido por Benito Juarez y fue atacado por el Ejército Francés que en ese entonces era considerado como invencible ya que no había perdido una batalla en más de 50 años. La historia de la Batalla de Puebla es sin duda un episodio que los mexicanos debemos conocer y admirar.Antes del 5 de Mayo, el día  28 de abril de 1862, tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubo cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas.
+
+El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo a cruzar la Sierra Madre Oriental y dirigirse hacia Puebla, era paso obligado para llegar a la capital mexicana.
+
+Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por Porfirio Díaz. El centro de la línea lo defendió Francisco Lamadrid con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec, ubicado en el norte de la ciudad, y en cuya cumbre están los Fuertes de Loreto y Guadalupe, con el general Miguel Negrete a la cabeza de la Segunda División de Infantería.
+
+El 5 de mayo, a las 9 de la manana, aparecen los franceses en el horizonte, pero es hasta las 11 de la manana cuando comienzan las hostilidades, anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.
+El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos; eran 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe.
+El 6o. Batallón de la Guardia Nacional del Estado de Puebla, bajo el mando del coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses y  rechazar el  ataque.
+Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos (originarios de Argelia), el regimiento de élite de la infantería francesa, quienes iniciaron un cauteloso ascenso hacia el Fuerte de Guadalupe, pero fueron recibidos con bayonetas y obligados lo franceses a retroceder.
+A las 2h30 de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe.  Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.
+Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.
+El día 5 de mayo de 1862, tras una de las más duras batallas de la historia, la cual duró desde el amanecer a la tarde, los franceses terminaron por retirarse. El saldo fue de más de 500 bajas en las líneas francesas contra apenas unas 100 en las mexicanas.
+
+Éste hecho se convirtió en un fuerte símbolo de la resistencia y del poder mexicano, representando justamente una victoria simbólica contra los grandes imperios.
+</h2></div>
+        </div>
+<br>
+<br>
+<center><img src="imagenes/batalla-de-puebla.jpg" width="30%" height="30%" alt="unefon"><img src="imagenes/batalla5mayo2.jpg" width="30%" height="30%" alt="unefon"></center>
+            
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Seis, ETB</h4>
+        </div>
+</div>
+
+   
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Inicio del conflicto</h1>
+        </div>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/conflicto-batalla.png',1)"><img src="imagenes/conflicto.jpg" width="30%" height="30%" id="Image37"></a>
+</center>
+         <div data-role="content" align="center">
+<h2>Existieron causas aparentes y causas que no lo fueron, o simplemente excusas, pero todos los aspectos mencionados fueron causas de la Batalla de Puebla; era claro que la República de México se encontraba sumida en crisis y tenía una deuda con Francia, España e Inglaterra; deuda que por la crisis, Benito Juárez, presidente de la época decidió no pagar por el momento y solicitar una tregua de 2 años para pagarla.
+
+Esta decisión de no pagar por el momento, disgustó a los acreedores de la deuda y decidieron agruparse para invadir a la Republica de México y cobrarse sus deudas, adicionalmente, cada uno de estos 3 países tenían intereses mas allá de la deuda; tenían intereses económicos, mineros y de expansión de sus negocios, también de colonización de territorios.
+</h2>
+<center><img src="imagenes/ejercito-de-oriente.jpg" width="30%" height="30%" alt="unefon"></center>
+<br>
+<div>
+               <h2>Existieron causas aparentes y causas que no lo fueron, o simplemente excusas, pero todos los aspectos mencionados fueron causas de la Batalla de Puebla; era claro que la República de México se encontraba sumida en crisis y tenía una deuda con Francia, España e Inglaterra; deuda que por la crisis, Benito Juárez, presidente de la época decidió no pagar por el momento y solicitar una tregua de 2 años para pagarla.
+
+Esta decisión de no pagar por el momento, disgustó a los acreedores de la deuda y decidieron agruparse para invadir a la Republica de México y cobrarse sus deudas, adicionalmente, cada uno de estos 3 países tenían intereses mas allá de la deuda; tenían intereses económicos, mineros y de expansión de sus negocios, también de colonización de territorios.
+</h2>
+<br>
+<center><img src="imagenes/puebla.jpg" width="30%" height="30%" alt="unefon"></center>
+               
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Seis, ETB</h4>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Monumentos de la Batalla</h1>
+        </div>
+<br>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('monumentos','','imagenes/monumentos.jpg',1)"><img src="imagenes/monumentos_batalla.jpg" name="monumentos" width="180" height="248" id="monumentos"></a>
+</center>
+<div>
+               <h2>Ignacio Zaragoza Seguin (24 de marzo de 1829 - 8 de septiembre de 1862) fue un militar mexicano reconocido como el héroe de la Batalla de Puebla, que tuvo lugar el 5 de mayo de 1862, cuando el ejército mexicano derrotó al ejército francés de élite al mando de Charles Ferdinand Latrille (Conde de Lorencez), considerado en su momento el mejor del mundo.
+<br>
+<center><img src="imagenes/Ignacio_Zaragoza.png" width="66" height="74" alt="unefon"></center>
+<br>
+Cuando las fuerzas francesas de Napoleón III invadieron México para imponer como emperador a Maximiliano de Habsburgo, Zaragoza, con el rango de general y al mando del Ejército de Oriente, las enfrentó en Acultzingo en la llamada Batalla de Las Cumbres, el 28 de abril de 1862, siendo obligado a retroceder. Zaragoza comprendió la posición defensiva y favorable que tenía la ciudad de Puebla, paso obligado para ir a la Ciudad de México.
+
+Al amanecer del 5 de mayo de 1862, el Gral. Ignacio Zaragoza arenga a sus soldados: "Nuestros enemigos son los primeros soldados del mundo, pero vosotros sois los primeros hijos de México y os quieren arrebatar vuestra patria". Ordena a Miguel Negrete dirigir la defensa por la izquierda; a Felipe Berriozábal por la derecha y a Porfirio Díaz que esté junto a él. Tras varias horas de lucha, la batalla no se decide, se enfrentan cuerpo a cuerpo mexicanos y franceses. Finalmente, los invasores se retiran mientras Zaragoza grita: "Tras ellos, a perseguirlos, el triunfo es nuestro". El ejército francés era considerado el mejor del mundo en ese tiempo, un ejército profesional, con la fama de invencible y de haber ganado batallas en Argelia (Legión Extranjera) y de haber entrado al Delta de río Mekong en la Indochina Francesa (hoy República Socialista de Vietnam), al mando del General Charles Ferdinand Letrille Conde de Lorencez, era derrotado y masacrado estrepitosamente. Los índígenas zacapoaxtlas, con machete y cuchillo en mano, los persiguieron y acabaron con muchos soldados franceses, suavos (tropa élite del ejército francés), belgas enviados por el Rey Leopoldo I padre de Carlota Amalia, que también formaban parte de la invasión. Cuando en Europa se supo la noticia de la derrota del ejército francés, el mejor del mundo en México, hubo incredulidad, asombro y estupor pero en Francia hubo dolor, terror por las historias que se contaban e histeria, dado que ningún país había humillado tanto a los franceses. Tenían 50 años que el ejército francés no era derrotado, dado que la última vez había sido en la Batalla de las Naciones (Waterloo) en el año 1815 con la derrota de Napoleón Bonaparte. Se elevaron voces de protesta por los intelectuales de ese país,´políticos que estaban en contra de la invasión a México y el pueblo en general. Muchos se preguntaban: "Que hacemos en México".
+
+El informe que el general Ignacio Zaragoza rindió sobre la Batalla de Puebla al Secretario de Guerra Miguel Blanco Múzquiz fue breve y significativo: "Las armas nacionales se han cubierto de gloria. Las tropas francesas se portaron con valor en el combate y su jefe con torpeza".El presidente Benito Juárez sería informado más tarde.
+</h2>
+<center><img src="imagenes/1862.jpg" width="30%" height="30%" alt="unefon"></center>
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Seis, ETB</h4>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Heroes de la batalla</h1>
+          
+        </div>
+        <br>
+        <center>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('heroes','','imagenes/5 DE MAYO.jpg',1)"><img src="imagenes/heroes-batalla.jpg" width="30%" height="30%" id="heroes"></a>
+          </center>
+<h2>Por escrito quedó y por ello no hay duda. En vísperas de la batalla, el general Charles Ferdinand Latrille, conde de Lorencez, comandante de las tropas francesas que invadían México por segunda ocasión, dirigió una carta al ministro de Guerra de Francia en la que le decía: “Tenemos sobre los mexicanos tal superioridad de raza, organización, disciplina, moralidad y elevación de sentimientos, que os ruego digáis al emperador que a partir de este momento y a la cabeza de seis mil soldados, ya soy el amo de México”. No tenía idea de que su castigo —el pez por la boca muere— sería tan definitivo como inmediato.
+
+Corría el año de 1862. Francia, Inglaterra y España habían declarado la guerra a México aduciendo una deuda de 80 millones de pesos. El presidente Juárez había respondido con un exhorto para lograr un acuerdo amistoso, pero fue inútil. La alianza tripartita amenazó con una invasión inminente si no se saldaban por completo las deudas. Pero al no haber dinero en las arcas no hubo nada que hacer. Juárez suspendió el pago de la deuda externa, los franceses enviaron cuadrillas militares con la bendición y los generales de Napoleón III. El ejército “más poderoso del mundo” venía a enfrentarse al nuestro. Fue entonces cuando Ignacio Zaragoza renunció al cargo de ministro de Guerra y Marina que le había dado Juárez, para ponerse a frente del recién formado Ejército de Oriente. Su misión: vencer al enemigo, proteger a la Ciudad de México y conservar intacto el territorio de la República liberal de Juárez.
+En honor de los militares que defendieron a México en la Batalla del 5 de Mayo se invierte cada año en un desfile y hasta hay calles con sus nombres, pero muchos de sus cuerpos están fuera de Puebla a falta de voluntad política.
+
+Salvo el General Ignacio Zaragoza cuyos restos están en el mausoleo de la Zona Cívica desde el centenario de la gesta, los restantes están en el Panteón de San Fernando en la Ciudad de México y han fracasado los intentos por traerlos.
+
+La lista, explica el historiador de la Benemérita Universidad Autónoma de Puebla (BUAP), Humberto Morales Moreno, incluye a personajes como Felipe Berriozábal, Mariano Escobedo y Miguel Negrete.
+</h2>
+<br>
+<center><img src="imagenes/heroes.jpg" width="30%" height="30%" alt="unefon"><img src="imagenes/batalla-heroes.jpg" width="30%" height="30%" alt="unefon"></center>
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Seis, ETB</h4>
+          </div>
+          </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Consultar mas informacion sobre los temas anteriores</h1>
+        </div>
+        <center><h5>Links para mas informacion</h5></center>
+         <div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://historiamexicana.colmex.mx/index.php/RHM/article/download/1148/1039" data-role="button" id="beep">
+               <h2>Informacion sobre el 4 de mayo</h2>
+               </a>
+               </li>
+                 <li class="ui-first-child ui-last-child">
+                   <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button" id="vibrar">
+                   <h2>Informacion sobre el 5 de mayo</h2>
+                   </a>
+                   </li>
+                   <li class="ui-first-child ui-last-child">
+                   <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button" id="vibrar">
+                   <h2>Informacion sobre el los heroes de la batalla</h2>
+                   </a>
+                   </li>
+                   <li class="ui-first-child ui-last-child">
+                   <a href="http://mitosyleyendas.com.mx/leyenda-del-5-de-mayo/" data-role="button" id="vibrar">
+                   <h2>Informacion sobre la leyenda del 5 de mayo</h2>
+                   </a>
+                   </li>
+                   </ul>
+                   </div>
+                   </div>
+</div>
+
+</body>
+</html>
+
+ 
+                                                       
+                                        
+                                                          
+                
+                     
+   
